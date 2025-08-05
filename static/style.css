@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background-color: #0a0a0a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* ===== هدر (Hero) ===== */
+.hero {
+    background: url('https://images.unsplash.com/photo-1603791445824-0050bd436b5a') center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero .overlay {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    color: #FFD700;
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #FFD700;
+    color: black;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.btn:hover {
+    background: #ffae00;
+    box-shadow: 0 0 15px #ffae00;
+}
+
+/* ===== بخش‌ها ===== */
+.section {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+.section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #FFD700;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #FFD700;
+}
+
+/* ===== آمار ===== */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.stat-card {
+    background: #111;
+    border: 1px solid #FFD700;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #FFD700;
+}
+.stat-card h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* ===== ویدئوها ===== */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 15px;
+}
+.video-grid iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* ===== جدول پکیج ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #FFD700;
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #FFD700;
+}
+th {
+    background: #FFD700;
+    color: black;
+}
+
+/* ===== فرم تماس ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input, textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: white;
+}
+textarea {
+    resize: none;
+    height: 120px;
+}
+button {
+    padding: 12px;
+    background: #FFD700;
+    border: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background: #ffae00;
+    box-shadow: 0 0 10px #ffae00;
+}
+
+/* پیام موفقیت */
+.flash {
+    background: green;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* ===== فوتر ===== */
+footer {
+    background: #111;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid #FFD700;
+}
+
+/* ===== انیمیشن ===== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+/* ===== واکنش‌گرایی ===== */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 1.8rem; }
+    .hero p { font-size: 1rem; }
+}
