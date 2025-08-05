@@ -1,108 +1,119 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <title>مدیا کیت - کانال Rofagha</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
-
-<!-- هدر -->
-<header class="hero">
-    <div class="overlay">
-        <h1>🎯 Rofagha - Mafia Game Channel</h1>
-        <p>جذب اسپانسر برای بزرگترین کانال فارسی‌زبان مافیا</p>
-        <a href="#contact" class="btn">همکاری با ما</a>
-    </div>
-</header>
-
-<!-- آمار کانال -->
-<section id="stats" class="section">
-    <h2>📊 آمار زنده کانال</h2>
-    <div class="stats-grid">
-        <div class="stat-card">
-            <h3>{{ stats.subscribers }}</h3>
-            <p>سابسکرایبر</p>
-        </div>
-        <div class="stat-card">
-            <h3>{{ stats.views }}</h3>
-            <p>کل بازدید</p>
-        </div>
-        <div class="stat-card">
-            <h3>{{ stats.videos }}</h3>
-            <p>تعداد ویدئوها</p>
+    </header class="site-header">
+    <div class="header-container">
+        <a href="https://www.youtube.com/@Mafia.Rofagha" target="_blank" class="logo-link">
+            <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Logo" class="site-logo">
+        </a>
+        <div class="header-text">
+            <h1 class="channel-name">مافیا آنلاین</h1>
+            <p class="channel-tagline">
+                رفقا برگزار کننده بازی مافیا با بهترین پلیرهای حضوری و آنلاین دنیای مافیا است.
+                اینجا سناریو هایی مثل سناریو نماینده، زودیاک، بازپرس، میتیک و کلی سناریو جدید جذاب اجرا می‌شه.
+                اگر به دیدن بازی های پلیر های مطرح حضوری مثل علی جوادی، محمد زاهدی ، شایان غلام‌ رضایی و ...
+                علاقه دارید حتما کانال ما را دنبال کنید.
+            </p>
         </div>
     </div>
-</section>
+    </header>
 
-<!-- مخاطبان -->
-<section id="audience" class="section">
-    <h2>🎯 مخاطبان هدف</h2>
-    <p>بینندگان ما عمدتاً جوانان ۱۸ تا ۳۴ ساله هستند که عاشق بازی مافیا و سرگرمی‌های گروهی‌اند. این جامعه فعال و وفادار فرصت عالی برای معرفی برند شماست.</p>
-</section>
+    <!-- آمار کانال -->
+    <section id="stats" class="section">
+        <h2>📊 آمار زنده کانال</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>{{ stats.subscribers }}</h3>
+                <p>سابسکرایبر</p>
+            </div>
+            <div class="stat-card">
+                <h3>{{ stats.views }}</h3>
+                <p>کل بازدید</p>
+            </div>
+            <div class="stat-card">
+                <h3>{{ stats.videos }}</h3>
+                <p>تعداد ویدئوها</p>
+            </div>
+        </div>
+    </section>
 
-<!-- ویدئوهای برتر -->
-<section id="videos" class="section">
-    <h2>🔥 ویدئوهای برتر</h2>
-    <div class="video-grid">
-        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-    </div>
-</section>
+    <!-- مخاطبان -->
+    <section id="audience" class="section">
+        <h2>🎯 مخاطبان هدف</h2>
+        <p>بینندگان ما عمدتاً جوانان ۱۸ تا ۳۴ ساله هستند که عاشق بازی مافیا و سرگرمی‌های گروهی‌اند. این جامعه فعال و
+            وفادار فرصت عالی برای معرفی برند شماست.</p>
+    </section>
 
-<!-- پکیج‌های اسپانسری -->
-<section id="packages" class="section">
-    <h2>💼 پکیج‌های اسپانسری</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>پکیج</th>
-                <th>توضیحات</th>
-                <th>قیمت</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Basic</td>
-                <td>ذکر نام برند در ابتدای ویدئو</td>
-                <td>$100</td>
-            </tr>
-            <tr>
-                <td>Standard</td>
-                <td>تبلیغ ۳۰ ثانیه‌ای وسط ویدئو</td>
-                <td>$250</td>
-            </tr>
-            <tr>
-                <td>Premium</td>
-                <td>ویدئوی اختصاصی معرفی برند</td>
-                <td>$500</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
+    <!-- ویدئوهای برتر -->
+    <section id="videos" class="section">
+        <h2>🔥 ویدئوهای برتر</h2>
+        <div class="video-grid">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        </div>
+    </section>
 
-<!-- فرم تماس -->
-<section id="contact" class="section">
-    <h2>📩 ارتباط با ما</h2>
-    <form action="/contact" method="POST">
-        <input type="text" name="name" placeholder="نام شما" required>
-        <input type="email" name="email" placeholder="ایمیل شما" required>
-        <textarea name="message" placeholder="پیام شما" required></textarea>
-        <button type="submit" class="btn">ارسال پیام</button>
-    </form>
-    {% with messages = get_flashed_messages() %}
+    <!-- پکیج‌های اسپانسری -->
+    <section id="packages" class="section">
+        <h2>💼 پکیج‌های اسپانسری</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>پکیج</th>
+                    <th>توضیحات</th>
+                    <th>قیمت</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basic</td>
+                    <td>ذکر نام برند در ابتدای ویدئو</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Standard</td>
+                    <td>تبلیغ ۳۰ ثانیه‌ای وسط ویدئو</td>
+                    <td>$250</td>
+                </tr>
+                <tr>
+                    <td>Premium</td>
+                    <td>ویدئوی اختصاصی معرفی برند</td>
+                    <td>$500</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- فرم تماس -->
+    <section id="contact" class="section">
+        <h2>📩 ارتباط با ما</h2>
+        <form action="/contact" method="POST">
+            <input type="text" name="name" placeholder="نام شما" required>
+            <input type="email" name="email" placeholder="ایمیل شما" required>
+            <textarea name="message" placeholder="پیام شما" required></textarea>
+            <button type="submit" class="btn">ارسال پیام</button>
+        </form>
+        {% with messages = get_flashed_messages() %}
         {% if messages %}
-            <div class="flash">{{ messages[0] }}</div>
+        <div class="flash">{{ messages[0] }}</div>
         {% endif %}
-    {% endwith %}
-</section>
+        {% endwith %}
+    </section>
 
-<!-- فوتر -->
-<footer>
-    <p>© 2025 Rofagha Channel - All Rights Reserved</p>
-</footer>
+    <!-- فوتر -->
+    <footer>
+        <p>© 2025 Rofagha Channel - All Rights Reserved</p>
+    </footer>
 
 </body>
+
 </html>
