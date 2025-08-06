@@ -257,6 +257,54 @@ button:hover {
     text-align: center;
 }
 
+/* Social Media Section */
+.social-media {
+    background-color: #000;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 2.5rem;
+    color: gold;
+    border: 2px solid gold;
+    padding: 15px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px gold;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 25px gold, 0 0 50px gold;
+}
+
+/* Specific Colors on Hover */
+.social-icon.instagram:hover {
+    color: #E1306C;
+    border-color: #E1306C;
+    box-shadow: 0 0 25px #E1306C, 0 0 50px #E1306C;
+}
+
+.social-icon.telegram:hover {
+    color: #0088cc;
+    border-color: #0088cc;
+    box-shadow: 0 0 25px #0088cc, 0 0 50px #0088cc;
+}
+
+.social-icon.youtube:hover {
+    color: #ff0000;
+    border-color: #ff0000;
+    box-shadow: 0 0 25px #ff0000, 0 0 50px #ff0000;
+}
+
 /* ===== فوتر ===== */
 footer {
     background: #111;
