@@ -12,6 +12,7 @@ body {
 /* ===== هدر (Hero) ===== */
 /* Full Width Header */
 .site-header {
+    position: relative;
     width: 100%;
     overflow: hidden;
 }
@@ -21,6 +22,34 @@ body {
     height: auto;
     display: block;
 }
+
+/* Neon Text Overlay */
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bold;
+    color: gold;
+    text-align: center;
+    text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold, 0 0 40px gold;
+    animation: neon-pulse 2s infinite;
+}
+
+/* Neon Pulse Animation */
+@keyframes neon-pulse {
+
+    0%,
+    100% {
+        text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold, 0 0 40px gold;
+    }
+
+    50% {
+        text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 40px gold, 0 0 80px gold;
+    }
+}
+
 
 .hero {
     background: url('https://images.unsplash.com/photo-1603791445824-0050bd436b5a') center/cover no-repeat;
