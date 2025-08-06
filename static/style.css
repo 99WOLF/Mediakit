@@ -379,3 +379,49 @@ footer {
 .video-grid iframe:hover {
     transform: scale(1.05);
 }
+
+/* Logo Section */
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    /* فاصله خیلی زیاد بین لوگو و متن */
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Logo Style */
+.animated-logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* دایره‌ای کردن لوگو */
+    object-fit: cover;
+    box-shadow: 0 0 20px gold;
+    animation: slide-in-right 1.5s ease-out;
+}
+
+/* Slide in from Right Animation */
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Logo Text */
+.logo-text h1 {
+    color: gold;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.logo-text p {
+    color: #ccc;
+    font-size: 1.2rem;
+}
