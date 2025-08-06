@@ -10,6 +10,18 @@ body {
 }
 
 /* ===== هدر (Hero) ===== */
+/* Full Width Header */
+.site-header {
+    width: 100%;
+    overflow: hidden;
+}
+
+.site-header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .hero {
     background: url('https://images.unsplash.com/photo-1603791445824-0050bd436b5a') center/cover no-repeat;
     height: 100vh;
